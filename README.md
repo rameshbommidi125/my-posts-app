@@ -1,45 +1,70 @@
-Project Overview:
+# Getting Started with Create React App
 
-This project is a React-based web application for managing posts. Users can create new posts, edit existing ones, and view all posts on a dedicated display page.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Files and Components:
-App.js:
-This file handles the routing for the application using React Router. It directs paths to different components:
+## Available Scripts
 
-1. /create: Renders the CreatePost component for creating new posts.
-2. /postDisplay: Renders the PostsDisplay component to display all posts.
-3. Default redirect: Redirects any unknown paths to /postDisplay.
+In the project directory, you can run:
 
-PostsDisplay/index.js:
-This component manages the display of all posts:
+### `npm start`
 
-1. Retrieves posts from localStorage on component mount.
-2. Includes a button to create new posts, redirecting to /create.
-3. Maps through stored posts and renders each using the PostItem component.
-4. Provides edit functionality by passing post data to CreatePost for editing.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-CreatePost/index.js:
-This component allows users to create or edit posts:
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-1. Loads existing post data for editing if accessed through the edit button in PostsDisplay.
-2. Handles form inputs for title and content.
-3. Submits data to localStorage, updating or creating new posts.
-4. Redirects to /postDisplay after submission to view updated posts.
+### `npm test`
 
-PostItem/index.js:
-This component displays individual posts:
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-1. Receives post data from PostsDisplay.
-2. Renders post title, content, and an edit button.
-3. Clicking the edit button triggers editing functionality in CreatePost.
+### `npm run build`
 
-Installation and Usage:
-1. Clone the repository.
-2. Navigate to the project directory.
-3. Install dependencies with npm install.
-4. Start the application with npm start.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Additional Notes:
-1. Ensure localStorage is enabled in the browser for data persistence.
-2. Customize styling in respective index.css files for each component as needed.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
